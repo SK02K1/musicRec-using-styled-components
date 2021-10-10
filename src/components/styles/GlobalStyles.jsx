@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   background-color: var(--bg-color);
   color: var(--text-color);
+
 }
 
 h1 {

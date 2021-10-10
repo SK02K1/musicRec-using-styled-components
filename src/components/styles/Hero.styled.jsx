@@ -19,4 +19,5 @@ export const StyledHero = styled.header`
     width: 40%;
     height: auto;
   }
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 `;

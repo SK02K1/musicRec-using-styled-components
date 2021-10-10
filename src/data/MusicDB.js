@@ -5,8 +5,7 @@ export const getMusicDB = () => {
         name: "Brown Munde",
         artist: "AP Dhillon, Gminxr, Gurinder",
         albumArt:
-          "https://i.scdn.co/image/ab67616d0000b273d9a129c4a656a55afff2ca02",
-        videoLink: "https://www.youtube.com/watch?v=VNs_cCtdbPc"
+          "https://i.scdn.co/image/ab67616d0000b273d9a129c4a656a55afff2ca02"
       },
 
       {

@@ -4,11 +4,17 @@ import { GenreBtn } from "./GenreBtn";
 
 const musicCollection = getMusicDB();
 
-export const GenreBtnContainer = () => {
+export const GenreBtnContainer = ({ genreBtnHandler }) => {
   return (
     <StlyedGenreBtnContainer>
       {Object.keys(musicCollection).map((genre) => {
-        return <GenreBtn btnName={genre} />;
+        return (
+          <GenreBtn
+            genreBtnHandler={(newGenre) => genreBtnHandler(genre)}
+            key={genre}
+            btnName={genre}
+          />
+        );
       })}
     </StlyedGenreBtnContainer>
   );
