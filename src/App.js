@@ -1,7 +1,8 @@
 import { GlobalStyles } from "./components/styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
-import { darkMode, lightMode } from "./data/themes.js";
+import { lightMode } from "./data/themes.js";
 import { useState } from "react";
+import { Nav } from "./components/Nav";
 
 export default function App() {
   const [appTheme, setAppTheme] = useState(lightMode);
@@ -9,6 +10,7 @@ export default function App() {
     <div className="App">
       <ThemeProvider theme={appTheme}>
         <GlobalStyles />
+        <Nav appThemeHandler={(themeName) => setAppTheme(themeName)} />
       </ThemeProvider>
     </div>
   );
