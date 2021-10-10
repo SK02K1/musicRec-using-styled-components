@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { lightMode } from "./data/themes.js";
 import { useState } from "react";
 import { Nav } from "./components/Nav";
+import { Hero } from "./components/Hero";
 
 export default function App() {
   const [appTheme, setAppTheme] = useState(lightMode);
@@ -11,6 +12,7 @@ export default function App() {
       <ThemeProvider theme={appTheme}>
         <GlobalStyles />
         <Nav appThemeHandler={(themeName) => setAppTheme(themeName)} />
+        <Hero />
       </ThemeProvider>
     </div>
   );

@@ -32,6 +32,14 @@ body {
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 2.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -41,4 +49,5 @@ button {
   border: none;
   cursor: pointer;
 }
+
 `;
