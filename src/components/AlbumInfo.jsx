@@ -1,8 +1,10 @@
-export const AlbumInfo = ({ name, artist }) => {
+import { StyledAlbumInfo } from "./styles/AlbumInfo.styled";
+
+export const AlbumInfo = ({ songName, artistName }) => {
   return (
-    <div>
-      <p>{name}</p>
-      <p>{artist}</p>
-    </div>
+    <StyledAlbumInfo>
+      <h2>{songName}</h2>
+      <p>{artistName}</p>
+    </StyledAlbumInfo>
   );
 };

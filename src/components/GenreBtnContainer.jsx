@@ -1,10 +1,7 @@
 import { StlyedGenreBtnContainer } from "./styles/GenreBtnContainer.styled";
-import { getMusicDB } from "../data/MusicDB";
 import { GenreBtn } from "./GenreBtn";
 
-const musicCollection = getMusicDB();
-
-export const GenreBtnContainer = ({ genreBtnHandler }) => {
+export const GenreBtnContainer = ({ genreBtnHandler, musicCollection }) => {
   return (
     <StlyedGenreBtnContainer>
       {Object.keys(musicCollection).map((genre) => {
