@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
 import { MainContainer } from "./components/MainContainer";
-// import { GenreBtnContainer } from "./components/GenreBtnContainer";
 
 export default function App() {
   const [appTheme, setAppTheme] = useState(lightMode);
@@ -15,7 +14,6 @@ export default function App() {
         <GlobalStyles />
         <Nav appThemeHandler={(themeName) => setAppTheme(themeName)} />
         <Hero />
-        {/* <GenreBtnContainer /> */}
         <MainContainer />
       </ThemeProvider>
     </div>
